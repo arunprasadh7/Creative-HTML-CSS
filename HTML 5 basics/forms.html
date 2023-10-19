@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Forms in HTML" />
+    <meta name="robots" content="index,follow" />
+    <title>Forms</title>
+    <link rel="icon" href="/files/forms.svg" />
+  </head>
+  <body>
+    <header>
+      <h1>Forms</h1>
+    </header>
+    <main>
+      <form action="/contact.html" autocomplete="off">
+        <label for="user">Username:</label>
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="abc"
+          maxlength="30"
+          minlength="3"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="abc@gmail.com"
+          autocomplete="off"
+        />
+        <br />
+        <select name="product" id="product">
+          <option value=""></option>
+          <option value="mobile">Mobile</option>
+          <option value="tab">Tablet</option>
+          <option value="pc">Desktop</option>
+        </select>
+        <br />
+        <button type="submit">Submit</button>
+        <br />
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10">
+Enter your comment</textarea
+        >
+        <br />
+        Mobile
+        <input type="radio" name="device" value="mobile" />
+        Tablet
+        <input type="radio" name="device" value="tab" />
+        PC
+        <input type="radio" name="device" value="pc" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
