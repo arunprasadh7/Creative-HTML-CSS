@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+
+button {
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgb(229, 140, 188);
+  border-style: solid;
+  border-color: rgb(19, 18, 18);
+  color: darkred;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
