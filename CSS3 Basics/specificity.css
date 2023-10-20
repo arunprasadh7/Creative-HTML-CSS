@@ -1,0 +1,28 @@
+.first {
+  color: crimson;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+h3 {
+  color: orange;
+}
+p {
+  color: yellowgreen;
+}
+
+.main-para h3,
+.main-para p {
+  color: darkcyan;
+}
+
+#four {
+  color: rgb(211, 34, 34);
+  font-weight: bold;
+}
+
+div > p:nth-child(2) {
+  color: goldenrod;
+}
