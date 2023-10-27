@@ -3,14 +3,12 @@ html {
 }
 
 button {
-  margin: 1rem;
-  padding: 1rem 1.5rem;
-  background: rgb(229, 140, 188);
-  border-style: solid;
-  border-color: rgb(19, 18, 18);
-  color: darkred;
-  font-size: 1.5rem;
-  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 2.5rem;
+  background: none;
+  color: rgb(216, 13, 13);
+  font-size: 2rem;
   font-weight: bold;
-  font-style: italic;
+  background-color: rgb(71, 71, 53);
 }
