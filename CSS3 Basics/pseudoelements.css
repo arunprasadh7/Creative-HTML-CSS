@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 2rem 4rem;
+  background-color: yellow;
+  cursor: pointer;
+  margin: auto;
+}
+
+button:hover {
+  background-color: green;
+}
+
+button:focus {
+  background-color: orange;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1::after {
+  content: " Arun";
+}
+
+h1::before {
+  content: "Good Morning ";
+}
