@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  border: 3px solid black;
+  /* min-height: 50vh; */
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-evenly; */
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+  color: white;
+}
+
+.box1 {
+  background: purple;
+}
+
+.box2 {
+  background: darkblue;
+}
+
+.box3 {
+  background: green;
+}
+
+.box4 {
+  background: orangered;
+}
+
+.box5 {
+  background: darkgoldenrod;
+}
+
+.box6 {
+  background: darkslategray;
+}
