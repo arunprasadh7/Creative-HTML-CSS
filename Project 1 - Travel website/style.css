@@ -100,7 +100,8 @@ nav ul {
   padding: 1.5rem;
 }
 
-.hero button {
+.hero button,
+.form-wrapper button {
   padding: 1.5rem 4rem;
   background: #4c6e97;
   border: none;
@@ -110,7 +111,8 @@ nav ul {
   transition: all 0.5s ease-in-out;
 }
 
-.hero button:hover {
+.hero button:hover,
+.form-wrapper button:hover {
   background: black;
   color: white;
   font-weight: bold;
@@ -230,6 +232,91 @@ nav ul {
   }
 }
 
+/* Contact section   */
+
+#contact {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url(./assests/img/contact-mountain.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+
+.name-form input,
+.email-form input {
+  padding: 0.5rem 1rem;
+  font-size: 2.4rem;
+  font-style: oblique;
+  border: none;
+  outline: none;
+}
+
+.form-wrapper label,
+.email-wrapper label {
+  margin: 0 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Footer section  */
+footer {
+  background-color: rgba(19, 28, 39, 1);
+  color: white;
+  /* min-height: 10vh; */
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper h5 {
+  display: flex;
+  flex: 1 1 40rem;
+}
+
+.footer-wrapper ul {
+  list-style: none;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Media query */
 
 @media screen and (max-width: 932px) {
@@ -255,5 +342,24 @@ nav ul {
   }
   .moving-cloud-2 {
     z-index: -2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+
+  .card h4 {
+    margin: 5rem 0;
+    font-size: 5rem;
+  }
+  .card p {
+    font-size: 3rem;
+  }
+
+  .footer-wrapper h5 {
+    justify-content: center;
+    margin-bottom: 3rem;
   }
 }
