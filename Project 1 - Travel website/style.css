@@ -141,7 +141,7 @@ nav ul {
 .locations-header h3 {
   font-size: 1.6rem;
   background: linear-gradient(#131c27, #663b34);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -154,6 +154,7 @@ nav ul {
   position: absolute;
   top: 0%;
   right: 0%;
+  pointer-events: none;
 }
 
 .moving-cloud-1 {
@@ -167,6 +168,57 @@ nav ul {
   z-index: -1;
   opacity: 0.5;
   animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+/* Benefits section  */
+
+.benefits-head {
+  background: #343c44;
+  min-height: 30vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30rem;
+  min-height: 45vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card-icon {
+  background-color: #3d3f41;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.cards img {
+  max-width: 20%;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
 }
 
 @keyframes cloudAnimation {
