@@ -53,6 +53,9 @@ a {
 .main-head {
   background-color: #131c27;
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -351,8 +354,8 @@ footer {
   }
 
   .card h4 {
-    margin: 5rem 0;
-    font-size: 5rem;
+    margin: 3rem 0;
+    font-size: 3rem;
   }
   .card p {
     font-size: 3rem;
