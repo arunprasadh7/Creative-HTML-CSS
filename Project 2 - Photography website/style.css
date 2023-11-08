@@ -144,6 +144,7 @@ nav {
   background: linear-gradient(#dad8dd, #dad1d4);
   position: relative;
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-elena {
@@ -154,7 +155,6 @@ nav {
 
 .plant {
   position: absolute;
-  top: 10%;
   bottom: 0;
   left: -25%;
   z-index: -1;
@@ -162,10 +162,11 @@ nav {
   animation: plant-entrance 1.5s ease-in-out 0.5s forwards,
     plant-shake 2.5s infinite ease alternate-reverse 2s;
   transform-origin: bottom;
+  max-height: 80%;
 }
 
 .plant2 {
-  left: 10%;
+  left: 20%;
 }
 
 /* Animations */
@@ -195,5 +196,46 @@ nav {
   }
   to {
     transform: rotateZ(0deg);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .nav-links {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .hero-introduction h2 {
+    margin: 2rem 0;
+  }
+
+  .hero-introduction p {
+    width: inherit;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .hero-introduction a {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .plant2 {
+    left: 40%;
   }
 }
