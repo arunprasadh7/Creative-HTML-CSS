@@ -170,6 +170,58 @@ nav {
   left: 40%;
 }
 
+/* About section  */
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 2 1 40rem;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.about-text h2 {
+  margin: 1rem 0;
+  padding: 2rem;
+  font-family: "Vibes";
+}
+
+.about-text h3 {
+  font-size: 3rem;
+  padding: 0.5rem 8rem;
+  font-family: "Ruhl Medium";
+}
+
+.about-text p {
+  font-size: 2rem;
+  padding: 0.5rem 8rem;
+  /* border: 3px solid orange; */
+}
+
+.about-image {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about-image h5 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  letter-spacing: 2rem;
+}
+
+.potrait-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 /* Animations */
 
 @keyframes opening {
