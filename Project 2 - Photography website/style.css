@@ -28,7 +28,7 @@ html {
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --big: calc(2.4rem + 1vw);
+  --big: calc(8rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
@@ -140,6 +140,7 @@ nav {
   border: 3px solid black;
   border-radius: 10px;
 }
+
 .hero-images {
   flex: 1 1 40rem;
   background: linear-gradient(#dad8dd, #dad1d4);
@@ -245,6 +246,97 @@ nav {
   grid-column: 3/4;
   grid-row: 1/-1;
 }
+
+/* Contact page  */
+
+.contact {
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+  font-size: var(--header3);
+  color: var(--gray-text);
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+
+.form-wrapper label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0;
+  background-color: var(--background-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.form-wrapper button {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 8rem;
+  background-color: var(--special-color);
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-wrapper button:hover {
+  background-color: #5f414c;
+}
+
+.form-wrapper button:active {
+  background-color: lightsalmon;
+}
+
+.contact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact img {
+  flex: 1 1 40rem;
+}
+
+/* Footer section  */
+
+footer {
+  min-height: 10vh;
+  background-color: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 2rem 5%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer h5 {
+  flex: 3 1 40rem;
+  font-size: var(--text);
+  font-family: sans-serif;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Animations */
 
 @keyframes opening {
@@ -335,6 +427,35 @@ nav {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
+
+  .contact img {
+    display: none;
+  }
+
+  .form-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+  }
+
+  .form-wrapper h2 {
+    margin-top: 5rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer h5 {
+    order: 2;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+
+  footer ul {
+    order: 1;
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -345,5 +466,16 @@ nav {
 
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --big: 8rem;
+    --text: 3rem;
   }
 }
