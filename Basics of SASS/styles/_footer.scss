@@ -1,0 +1,12 @@
+$footer-title: 2rem;
+$footer-color: red;
+
+footer {
+  min-height: 10vh;
+
+  h4 {
+    font-size: $footer-title;
+    color: $footer-color;
+    text-align: center;
+  }
+}

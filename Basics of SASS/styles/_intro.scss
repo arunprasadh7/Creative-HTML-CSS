@@ -1,0 +1,31 @@
+.introduction {
+  min-height: 90vh;
+  @include flex(column, space-around);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+
+  h2 {
+    font-size: $bigfont;
+  }
+
+  button {
+    background-color: orangered;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: lightsalmon;
+    }
+  }
+}
+
+// .introduction h2 {
+//   font-size: $bigfont;
+// }
+
+// .introduction button {
+//   border: none;
+//   background-color: orange;
+// }

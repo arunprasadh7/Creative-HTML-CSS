@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.introduction {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.introduction h2 {
+  font-size: 90px;
+}
+.introduction button {
+  background-color: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.introduction button:hover {
+  background-color: lightsalmon;
+}
+
+footer {
+  min-height: 10vh;
+}
+footer h4 {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
