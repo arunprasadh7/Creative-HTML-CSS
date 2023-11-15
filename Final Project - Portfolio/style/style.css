@@ -94,7 +94,7 @@ nav ul {
   padding-top: 2rem;
   background: linear-gradient(to left, #38d39f, #38a4d3);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -185,26 +185,92 @@ nav ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 .projects h2 {
-  text-align: center;
-  /* padding: 2rem 5rem; */
   margin: 5rem;
-}
-.projects div {
-  margin: 2rem;
-}
-
-.projects img {
-  width: 100%;
-  margin: auto;
-  align-self: center;
 }
 
 .travelly,
 .elena-joy {
   flex: 1 1 40rem;
+}
+
+.main-head {
+  min-height: 10vh;
+}
+
+.form-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.form-section form {
+  padding: 3rem 10rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+.form-section form input,
+.form-section form textarea {
+  margin: 2rem;
+  padding: 0.2rem 0.5rem;
+}
+.form-section form input:focus,
+.form-section form textarea:focus {
+  outline: 2px solid black;
+}
+.form-section form textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+.form-section form button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #154353;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.form-section form button:focus {
+  background-color: rgb(21, 21, 59) violet;
+}
+.form-section form button:hover {
+  background-color: rgb(18, 18, 56);
+}
+
+.footer {
+  min-height: 10vh;
+}
+
+footer {
+  background-color: #154353;
+  color: white;
+  min-width: 10vh;
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer h4 {
+  flex: 1 1 30rem;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 50rem;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1462px) {
@@ -221,6 +287,9 @@ nav ul {
   }
   nav {
     width: 100%;
+  }
+  footer {
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 754px) {
@@ -262,4 +331,22 @@ nav ul {
   .intro-images {
     text-align: center;
   }
-} /*# sourceMappingURL=style.css.map */
+  .projects {
+    width: 90%;
+  }
+  .projects img {
+    width: 100%;
+  }
+  form {
+    padding: 0;
+    width: 100%;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+  footer h4 {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -20,6 +20,8 @@ $gray-text: #2c2c2c;
 @import "global";
 @import "intro";
 @import "projects";
+@import "contact";
+@import "footer";
 
 @media screen and (max-width: 1462px) {
   html {
@@ -46,6 +48,10 @@ $gray-text: #2c2c2c;
 
   nav {
     width: 100%;
+  }
+
+  footer {
+    margin-top: 2rem;
   }
 }
 
@@ -90,5 +96,28 @@ $gray-text: #2c2c2c;
 
   .intro-images {
     text-align: center;
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  .projects img {
+    width: 100%;
+  }
+
+  form {
+    padding: 0;
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+  footer h4 {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
