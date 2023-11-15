@@ -19,3 +19,75 @@ $gray-text: #2c2c2c;
 
 @import "global";
 @import "intro";
+
+@media screen and (max-width: 1462px) {
+  html {
+    font-size: 53%;
+  }
+
+  .splash {
+    // display: none;
+  }
+
+  svg {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .splash {
+    display: none;
+  }
+
+  body {
+    // background: linear-gradient(rgb(190, 190, 178), whitesmoke);
+  }
+
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-head {
+    width: 100%;
+  }
+
+  svg {
+    width: 90%;
+    height: 60%;
+  }
+
+  nav {
+    .logo {
+      @include flex(column, center, center);
+      flex: 1 1 20rem;
+      margin: 1rem 0;
+    }
+
+    ul {
+      flex: 1 1 60rem;
+      margin: 1rem 0;
+    }
+  }
+
+  .intro-social {
+    @include flex(row, center, center);
+    a {
+      margin: 2rem;
+    }
+  }
+
+  .intro-text {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .intro-images {
+    text-align: center;
+  }
+}
